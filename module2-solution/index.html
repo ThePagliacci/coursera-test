@@ -6,31 +6,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>second model test</title>
     <style>
-        @media (min-width: 992px)
+        @media (min-width: 991px)
         {
+            *
+            {
+                box-sizing: border-box;
+            }
             h1 {
+                text-align: center;
                 margin-bottom: 15px;
             }
-            .row {
-                margin-bottom: 15px;
+            .row
+            {
+                width: 100%;
+            }
+            .row >div
+            {
+                position: relative;
+                border: 10px solid white;
             }
             .col-md-4 {
-                background-color: black;
-                border: 1px solid red;
+                float: left;
+                background-color: gray;
+                width: 33.33%;
+            }
+            p
+            {
+                margin: 10px;
+                text-align: left;
+                padding: 10px;
+            }
+            #b1
+            {
+                background-color: blueviolet;
+                border: 1px solid black;
+                top: 0;
+                right: 0;
+                position: absolute;
+                margin:0;
+                padding: 5px;
+            }
+            #b2
+            {
+                background-color: red;
+                border: 1px solid black;
+                top: 0;
+                right: 0;
+                position: absolute;
+                margin:0;
+                padding: 5px;
+            }
+            #b3
+            {
+                background-color: green;
+                border: 1px solid black;
+                top: 0;
+                right: 0;
+                position: absolute;
+                margin:0;
+                padding: 5px;
+            }
+
+        }
+        @media (max-width: 767px)
+        {
+            *
+            {
+                box-sizing: border-box;
+            }
+            h1 
+            {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            .row
+            {
+                width: 100%;
+            }
+            .row >div
+            {
+                position: relative;
+                border: 10px solid white;
+            }
+            .col-md-4 {
+                float: left;
+                background-color: grey;
+                width: 100%;
+                position: relative;
+            }
+            p
+            {
+                margin: 10px;
+                text-align: left;
+                padding: 10px;
+            }
+            #b1
+            {
+                background-color: red;
+                border: 1px solid black;
+                top: 0;
+                right: 0;
+                position: absolute;
+                margin:0;
+                padding: 5px;
+            }
+            #b2
+            {
+                background-color: green;
+                border: 1px solid black;
+                top: 0;
+                right: 0;
+                position: absolute;
+                margin:0;
+                padding: 5px;
+            }
+            #b3
+            {
+                background-color: blueviolet;
+                border: 1px solid black;
+                top: 0;
+                right: 0;
+                position: absolute;
+                margin:0;
+                padding: 5px;
+            }
+        }
+        @media (min-width: 767px) and ( max-width:991px)
+        {
+            *
+            {
+                box-sizing: border-box;
+            }
+            h1
+            {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            .row
+            {
+                width: 100%;
+            }
+            .row >div
+            {
+                position: relative;
+                border: 10px solid white;
+            }
+
+            .col-md-6 {
+                float: right;
+                background-color: grey;
+                width: 50%;
+                position: relative;
+            }
+            .col-md-2 {
+                float: left;
+                background-color: grey;
+                width: 50%;
+                position: relative;
+            }
+            .col-md-1
+            {
+                float: right;
+                background-color: grey;
+                width: 100%;
+                position: relative;
+            }
+            p
+            {
+                margin: 10px;
+                text-align: left;
+                padding: 10px;
+            }
+            #b1
+            {
+                background-color: blueviolet;
+                border: 1px solid black;
+                top: 0;
+                right: 0;
+                position: absolute;
+                margin:0;
+                padding: 5px;
+            }
+            #b2
+            {
+                background-color: red;
+                border: 1px solid black;
+                top: 0;
+                right: 0;
+                position: absolute;
+                margin:0;
+                padding: 5px;
+            }
+            #b3
+            {
+                background-color: green;
+                border: 1px solid black;
+                top: 0;
+                right: 0;
+                position: absolute;
+                margin:0;
+                padding: 5px;
             }
         }
     </style>
 </head>
 <body>
-    <h1>Title</h1>
-
+    <h1>Our Menu</h1>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4">first</div>
-            <div class="col-md-4">second</div>
-            <div class="col-md-4">third</div>
+            <div class="col-md-4 col-md-2">            
+                <p id="b1">Chicken</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Porro velit, impedit officia enim vel voluptates fugiat, 
+                     rerum cumque expedita corrupti in, fuga debitis error! Odio
+                      magni excepturi reprehenderit non cupiditate?</p>
+            </div>
+
+            <div class="col-md-4 col-md-6">           
+                <p id="b2">Beef</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro velit, impedit officia enim vel voluptates fugiat, 
+                    rerum cumque expedita corrupti in, fuga debitis error! Odio
+                     magni excepturi reprehenderit non cupiditate?</p>
+            </div>
+
+            <div class="col-md-4 col-md-1">
+                <p id="b3">Sushi</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro velit, impedit officia enim vel voluptates fugiat, 
+                    rerum cumque expedita corrupti in, fuga debitis error! Odio
+                     magni excepturi reprehenderit non cupiditate?</p>
+            </div>
         </div>
     </div>
-
 </body>
 </html>
